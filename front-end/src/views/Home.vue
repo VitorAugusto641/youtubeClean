@@ -46,7 +46,8 @@ export default {
   methods: {
     async buscar() {
       if (!this.query.trim()) return
-
+  console.log('BACKEND_URL:', BACKEND_URL)
+  console.log('APP_KEY:', APP_KEY)
       this.carregando = true
       this.erro = null
       this.videos = []
