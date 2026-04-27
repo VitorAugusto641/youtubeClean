@@ -30,10 +30,8 @@
 <script>
 // URL do seu backend hospedado (Railway, Render, etc.)
 // Troque pela URL real após hospedar
-const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || 'http://localhost:3000'
-
-// Chave secreta que o backend vai validar (defina no .env do seu projeto Vue)
-const APP_KEY = import.meta.env.VITE_APP_KEY || ''
+const BACKEND_URL = process.env.VUE_APP_BACKEND_URL || 'http://localhost:3000'
+const APP_KEY = process.env.VUE_APP_KEY || ''
 
 export default {
   name: 'App',
